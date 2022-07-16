@@ -580,7 +580,7 @@
 	snps,has-lpm-erratum;
 	snps,hird-threshold = /bits/ 8 <0x10>;
 	maximum-speed = "high-speed";
-	dr_mode = "host";
+	dr_mode = "peripheral";
 };
 
 &usb_1_hsphy {
