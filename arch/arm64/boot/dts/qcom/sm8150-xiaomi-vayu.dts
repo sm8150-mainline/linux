@@ -611,8 +611,8 @@
 			charge-full-design-microamp-hours = <5150000>;
 	};
 	
-	bq25970-standalone: fuel-gauge@66 {
-		compatible = "ti,bq2597x-standalone";
+	bq25970: fuel-gauge@66 {
+		compatible = "ti,bq2597x";
 		reg = <0x66>;
 		monitored-battery = <&bat>;
 	};
