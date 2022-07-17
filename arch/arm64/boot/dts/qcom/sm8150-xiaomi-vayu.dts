@@ -506,7 +506,7 @@
 
 &wifi {
 	status = "okay";
-}
+};
 
 &pm8150_gpios {
 	vol_up_pin_a: vol-up-active {
@@ -616,4 +616,4 @@
 		reg = <0x66>;
 		monitored-battery = <&bat>;
 	};
-}
+};
