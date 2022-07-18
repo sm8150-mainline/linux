@@ -550,6 +550,11 @@
 
 };
 
+&remoteproc_mpss {
+	status = "okay";
+	firmware-name = "qcom/sm8150/xiaomi-vayu/modem.mdt";
+};
+
 &uart2 {
 	status = "okay";
 };
