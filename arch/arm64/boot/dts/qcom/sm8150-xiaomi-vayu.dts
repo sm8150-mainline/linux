@@ -605,20 +605,21 @@
 	vdda-pll-supply = <&vreg_l5a_0p875>;
 };
 
-&qup_i2c4_default {
-	status = "okay";
-	clock-frequency = <100000>;
-
-	bat: battery {
-			compatible = "simple-battery";
-			voltage-min-design-microvolt = <4150000>;
-			energy-full-design-microwatt-hours = <21000000>;
-			charge-full-design-microamp-hours = <5150000>;
-	};
-	
-	bq25970: fuel-gauge@66 {
-		compatible = "ti,bq2597x";
-		reg = <0x66>;
-		monitored-battery = <&bat>;
-	};
-};
+// TODO: Rewrite charger driver
+//&qup_i2c4_default {
+//  	status = "okay";
+//  	clock-frequency = <100000>;
+//
+//  	bat: battery {
+//  			compatible = "simple-battery";
+//  			voltage-min-design-microvolt = <4150000>;
+//  			energy-full-design-microwatt-hours = <21000000>;
+//  			charge-full-design-microamp-hours = <5150000>;
+//  	};
+//	
+//  	bq25970: fuel-gauge@66 {
+//  		compatible = "ti,bq2597x";
+//  		reg = <0x66>;
+//  		monitored-battery = <&bat>;
+//  	};
+//};
