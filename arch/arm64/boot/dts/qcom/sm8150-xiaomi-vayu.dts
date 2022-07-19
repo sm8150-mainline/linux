@@ -500,7 +500,7 @@
 
 	zap-shader {
 		memory-region = <&gpu_mem>;
-		firmware-name = "qcom/a640_zap.mdt";
+		firmware-name = "qcom/sm8150/a640_zap.mdt";
 	};
 };
 
